@@ -466,7 +466,6 @@ export class ChatComponent extends LitElement {
       }
     }
     .chat-container {
-      container-type: inline-size;
       position: relative;
       background: var(--bg);
       font-family:
@@ -508,11 +507,7 @@ export class ChatComponent extends LitElement {
       display: flex;
       gap: var(--space-md);
     }
-    @container (width < 480px) {
-      .suggestions {
-        flex-direction: column;
-      }
-    }
+
 
     .suggestion {
       flex: 1 1 0;
